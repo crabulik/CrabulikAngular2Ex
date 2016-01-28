@@ -12,6 +12,8 @@
     "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-rimraf": "^0.2.0",
+    "typescript": "^1.7.5"
   }
 }

@@ -5,14 +5,28 @@
     <title>Angular 2 with ASP.NET 5</title>
 
     <script src="libs/es6-shim.min.js"></script>
+    <script src="libs/system-polyfills.js"></script>
 
     <script src="libs/angular2-polyfills.js"></script>
-    <script src="libs/system.js"></script>
-    <script src="libs/Rx.umd.js"></script>
-    <script src="libs/angular2-all.umd.js"></script>
+    <script src="libs/system.src.js"></script>
+    <script src="libs/Rx.js"></script>
+    <script src="libs/angular2.dev.js"></script>
 
     <script src="app/app.component.js"></script>
     <script src="app/boot.js"></script>
+
+    <script>
+      System.config({
+        packages: {
+          app: {
+            
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
 </head>
 <body>
     <my-app>Loading...</my-app>
