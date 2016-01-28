@@ -6,11 +6,12 @@
     "sourceMap": true,
     "target": "es5",
     "experimentalDecorators": true,
-    "module": "commonjs",
+    "module": "system",
     "moduleResolution": "node",
     "outDir": "../wwwroot/app/",
-    "mapRoot": "../wwwroot/app/",
+
     "emitDecoratorMetadata": true
+
   },
   "exclude": [
     "node_modules",
